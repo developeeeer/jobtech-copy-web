@@ -130,7 +130,8 @@ main section {
 
 #section-company-on-image-container {
   background-color: white;
-  width: 642px;
+  max-width: 642px;
+  width: 100%;
   min-height: 402px;
   height: auto;
   padding: 24px;
@@ -176,9 +177,9 @@ main section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px 20px;
+  padding: 40px 0px;
 }
-#section-recruit-content-container .section-recruid-content {
+.section-recruid-content {
   max-width: 632px;
   width: 90%;
   height: auto;
@@ -355,6 +356,7 @@ footer #policy {
   #section-recruit-content-container ul li {
     display: block;
     margin-bottom: 8px;
+    padding: 0 8px;
   }
   .section-recruit-li-head {
     text-align: left;
