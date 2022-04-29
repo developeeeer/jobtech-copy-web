@@ -98,6 +98,14 @@ header nav li a {
   margin-top: 40px;
 }
 
+.order1 {
+  order: 1;
+}
+
+.order2 {
+  order: 2;
+}
+
 /* section common */
 main section {
   padding: 160px 0;
@@ -115,6 +123,10 @@ main section {
   max-width: 640px;
   margin: 0 auto;
   margin-top: 40px;
+}
+
+.flex-reverse {
+  flex-direction: row-reverse;
 }
 
 /* service section */
@@ -352,6 +364,9 @@ footer #policy {
     font-size: 25px;
   }
   .section-recruit-content-header {
+    font-size: 25px;
+  }
+  .section-service-content-description-title {
     font-size: 25px;
   }
 }
