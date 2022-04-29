@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  display: block;
+}
+
+input {
+  border-style: none;
+  background-color: transparent;
+}
+
+input[type="text"]:focus {
+  outline: 0;
+}
+
+textarea:focus {
+  outline: 0;
+}
