@@ -43,6 +43,7 @@ header {
 }
 
 #header-top {
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -160,9 +161,10 @@ main section {
 }
 
 #section-company-bg-image-container {
+  box-sizing: border-box;
   width: 100%;
   height: auto;
-  padding: 40px 0px;
+  padding: 40px 20px;
   background-size: cover;
   background-image: url("images/companyback.jpg");
   background-position-x: center;
@@ -174,12 +176,13 @@ main section {
 }
 
 #section-company-on-image-container {
+  box-sizing: border-box;
   background-color: white;
   max-width: 642px;
   width: 100%;
   min-height: 402px;
   height: auto;
-  padding: 24px 0;
+  padding: 24px 16px;
 }
 
 #section-company-on-image-detail-container {
@@ -228,8 +231,9 @@ main section {
   max-width: 632px;
   width: 90%;
   height: auto;
+  box-sizing: border-box;
   background-color: white;
-  padding: 24px 8px;
+  padding: 24px 16px;
   margin: 0 auto 40px auto;
 }
 
@@ -386,13 +390,7 @@ footer #policy {
     margin-bottom: 8px;
     text-align: left;
   }
-  #section-company-on-image-container {
-    max-width: none;
-    width: 90%;
-    min-height: none;
-    height: auto;
-    padding: 8px;
-  }
+
   #section-company-on-image-detail-container img {
     width: 72px;
     height: 72px;
@@ -414,7 +412,11 @@ footer #policy {
     text-align: left;
     color: #707070;
   }
-  .section-recruid-content {
-    max-width: none;
+  #company-info ul li {
+    display: block;
+    margin-bottom: 8px;
+  }
+  #company-info .footer-li-head {
+    text-align: left;
   }
 }
