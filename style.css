@@ -368,6 +368,10 @@ footer #policy {
   #header-top {
     display: block;
     text-align: center;
+    width: 100%;
+  }
+  #header-top nav ul {
+    justify-content: center;
   }
   .section-service-content-description-title {
     font-size: 18px;
