@@ -27,19 +27,26 @@ header nav li {
   margin: auto 0;
   margin-left: 3%;
   font-size: 24px;
+}
+
+header nav li a {
   color: #707070;
 }
 
 #header-main-image {
   width: 100%;
-  height: 680px;
+  height: 600px;
   background-size: cover;
   background-image: url("images/topback.png");
   background-position-x: center;
   background-position-y: top;
+}
+
+#header-in-bg-image {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: inherit;
 }
 
 #header-main-image p {
@@ -110,7 +117,8 @@ main section {
 
 #section-company-bg-image-container {
   width: 100%;
-  height: 530px;
+  height: auto;
+  padding: 40px 10px;
   background-size: cover;
   background-image: url("images/companyback.jpg");
   background-position-x: center;
@@ -123,7 +131,8 @@ main section {
 #section-company-on-image-container {
   background-color: white;
   width: 642px;
-  height: 402px;
+  min-height: 402px;
+  height: auto;
   padding: 24px;
 }
 
@@ -143,6 +152,7 @@ main section {
 }
 #section-company-on-image-info-container {
   max-width: 440px;
+  height: auto;
   flex: auto;
 }
 
@@ -166,7 +176,7 @@ main section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px 0;
+  padding: 40px 20px;
 }
 #section-recruit-content-container .section-recruid-content {
   max-width: 632px;
@@ -270,4 +280,84 @@ footer #policy {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+}
+
+/* 〜1024px */
+@media screen and (max-width: 1024px) {
+  header nav ul li {
+    font-size: 16px;
+  }
+  .section-service-content-container {
+    max-width: 400px;
+    display: block;
+    text-align: center;
+  }
+  .section-service-content-description {
+    text-align: left;
+  }
+  .section-company-content-title {
+    font-size: 25px;
+  }
+  .section-company-content-title {
+    font-size: 25px;
+  }
+  .section-recruit-content-header {
+    font-size: 25px;
+  }
+}
+
+/* 〜480px */
+@media screen and (max-width: 480px) {
+  .section-title {
+    font-size: 22px;
+  }
+  #header-main-image p {
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  #header-top {
+    display: block;
+    text-align: center;
+  }
+  .section-service-content-description-title {
+    font-size: 18px;
+  }
+  .section-company-content-title {
+    font-size: 18px;
+  }
+  #section-company-on-image-detail-container {
+    display: block;
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  #section-company-on-image-detail-container div ul {
+    display: block;
+  }
+
+  #section-company-on-image-detail-container div ul li {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  #section-company-on-image-detail-container img {
+    width: 72px;
+    height: 72px;
+  }
+  .section-company-list-head {
+    width: 80px;
+    text-align: left;
+    color: #707070;
+  }
+  .section-recruit-content-header {
+    font-size: 18px;
+  }
+  #section-recruit-content-container ul li {
+    display: block;
+    margin-bottom: 8px;
+  }
+  .section-recruit-li-head {
+    text-align: left;
+    color: #707070;
+  }
 }
